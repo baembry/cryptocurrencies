@@ -1,0 +1,43 @@
+{
+  "name": "crypto-currency-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/polyfill": "^7.4.4",
+    "axios": "^0.19.0",
+    "bluebird": "^3.5.5",
+    "chart.js": "^2.8.0",
+    "core-js": "^3.1.4",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mysql": "^2.17.1",
+    "react": "^16.8.6",
+    "react-chartjs-2": "^2.7.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "css-loader": "^3.1.0",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.39.1",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.7.2"
+  }
+}
