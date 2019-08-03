@@ -22,12 +22,14 @@ const init = function() {
   tryCatch(async () => {
     await db.queryAsync(`CREATE DATABASE IF NOT EXISTS cryptoCurrencies`);
     await db.queryAsync(`USE cryptoCurrencies`);
+    // await db.queryAsync(`DROP TABLE prices`);
     await db.queryAsync(
       `CREATE TABLE IF NOT EXISTS prices 
             (date date not null,
                 cryptoCurrency tinytext,
                 currency tinytext,
-                value int)`
+                value float,
+                primary key (date))`
     );
   });
 };
